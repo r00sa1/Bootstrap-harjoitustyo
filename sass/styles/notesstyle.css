@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #DAB6BA;
+  color: #6E2F2E;
+}
+
+.header {
+  position: fixed;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  top: 0;
+}
+
+.navbar {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.navbar a {
+  font-family: "Quicksand", sans-serif;
+  font-style: #6E2F2E;
+}
+
+.navbar a:hover {
+  font-weight: bold;
+}
+
+.navbar a:focus {
+  font-weight: bold;
+}
+
+.container {
+  background-color: #F2E6E7;
+  width: 60%;
+  height: 60vh;
+  padding: 5%;
+  margin-top: 20vh;
+}
+
+.name, .message, .note {
+  border: solid 2px #DAB6BA;
+  background-color: white;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.txt {
+  text-align: center;
+  bottom: 0;
+}
+
+.txt p {
+  font-family: "Quicksand", sans-serif;
+  font-style: #6E2F2E;
+}/*# sourceMappingURL=notesstyle.css.map */
