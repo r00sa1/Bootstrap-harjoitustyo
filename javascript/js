@@ -1,1 +1,19 @@
-//Javascript-tiedosto
+function addMessage(){
+    let name = document.getElementById("name").value;
+    let note = document.getElementById("note").value;
+    const date = new Date();
+    let today = date.getDate() + '.' + (date.getMonth()+1) + '.' + date.getFullYear();
+    let time = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+
+    const important = document.getElementById('important').checked;
+
+    if (important == true) {
+        document.getElementById("notes").style.border = "3px dotted red";
+        document.getElementById("notes").innerHTML += '<li>' +'<b>' + today + ' ' + time + ' ' + '</b>' + '<i>' + name + '</i>' + '<br>' + note + '</li>';
+    } else {
+        document.getElementById("notes").innerHTML += '<li>' +'<b>' + today + ' ' + time + ' ' + '</b>' + '<i>' + name + '</i>' + '<br>' + note + '</li>';
+    }
+
+    document.getElementById("name").value= "";
+    document.getElementById("note").value = "";
+}

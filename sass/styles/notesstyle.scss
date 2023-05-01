@@ -40,24 +40,38 @@ $maintext: 'Quicksand', sans-serif;
   .container {
     background-color: $rose;
     width: 60%;
-    height: 60vh;
-    padding: 5%;
-    margin-top: 20vh;
+    // height: 800px;
+    padding: 1%;
+    margin-top: 19vh;
+    margin-bottom: 20vh;
   }
-  .name, .message, .note {
-    border: solid 2px $pink;
+
+  #notes {
+    width: 100%;
+    max-height: fit-content;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+  }
+  li {
     background-color: $white;
+    border: solid 1px $red;
+    padding: 1%;
+    margin: 2px;
   }
-  
   footer {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
   }
   
   .txt {
     text-align: center;
-    bottom: 0;
   }
   .txt p {
     font-family: $maintext;

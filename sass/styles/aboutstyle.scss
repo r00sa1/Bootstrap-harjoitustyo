@@ -40,15 +40,22 @@ header, footer {
 }
 
 .container {
-    position: absolutes;
-    top: 30vh;
-    left: 1%;
-    margin: 0 auto;
-    max-width: 200px;
-    height: 30px;
-    font-family: $header;
+    margin: 1%;
+    margin-top: 20vh;
+    width: 100%;
+    border: solid 2px $red;
+
+}
+#about {
+    left: 0;
+    margin-top: 10vh;
+    width: fit-content;
     font-size: 200px;
+    font-family: $header;
     color: $red;
+}
+#accordion {
+    right: 0;
 }
 footer {
     position:absolute;

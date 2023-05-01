@@ -32,15 +32,24 @@ header, footer {
 }
 
 .container {
-  position: absolutes;
-  top: 30vh;
-  left: 1%;
-  margin: 0 auto;
-  max-width: 200px;
-  height: 30px;
-  font-family: "Abril Fatface", cursive;
+  margin: 1%;
+  margin-top: 20vh;
+  width: 100%;
+  border: solid 2px #6E2F2E;
+}
+
+#about {
+  left: 0;
+  margin-top: 10vh;
+  width: -moz-fit-content;
+  width: fit-content;
   font-size: 200px;
+  font-family: "Abril Fatface", cursive;
   color: #6E2F2E;
+}
+
+#accordion {
+  right: 0;
 }
 
 footer {

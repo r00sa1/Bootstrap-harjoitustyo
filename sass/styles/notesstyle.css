@@ -37,25 +37,42 @@ header, footer {
 .container {
   background-color: #F2E6E7;
   width: 60%;
-  height: 60vh;
-  padding: 5%;
-  margin-top: 20vh;
+  padding: 1%;
+  margin-top: 19vh;
+  margin-bottom: 20vh;
 }
 
-.name, .message, .note {
-  border: solid 2px #DAB6BA;
+#notes {
+  width: 100%;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+li {
   background-color: white;
+  border: solid 1px #6E2F2E;
+  padding: 1%;
+  margin: 2px;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
 }
 
 .txt {
   text-align: center;
-  bottom: 0;
 }
 
 .txt p {
