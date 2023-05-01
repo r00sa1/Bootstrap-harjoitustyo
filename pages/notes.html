@@ -33,25 +33,33 @@
             </nav>
         </header>
         <div class="container"> 
-            <div class="mb-3"><!--Alla nimi-->
-                <label for="exampleFormControlInput1" class="form-label">Your name</label>
-                <input type="text" class="form-control" id="name" placeholder="Write your name here">
-            </div>
-            <div class="mb-3"><!--Alla note-->
-                <label for="exampleFormControlTextarea1" class="form-label">Your note</label>
-                <textarea class="form-control" id="note" rows="3"></textarea>
-            </div> <!--Alla checkbox-->
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="important">
-                <label class="form-check-label" for="flexCheckDefault">
-                Important
-                </label><br>
-            <button onclick="addMessage()" type="button" class="btn" style="background-color: white;">Add your message</button>
-            </div> <!--Elementti johon viestit tulostuu-->
-            <div class="note"> 
-                <label for="note">Notes</label><br>
-                <ul id="notes">
-                </ul>
+            <div class="row">
+                <div class="col" id="headerNotes">
+                    Notes
+                </div>
+                <div class="col" id="sideNotes">
+                    <div class="mb-3"><!--Alla nimi-->
+                        <label for="exampleFormControlInput1" class="form-label">Your name</label>
+                        <input type="text" class="form-control" id="name" minlength="2" maxlength="10" placeholder="Write your name here">
+                    </div>
+                    <div class="mb-3"><!--Alla note-->
+                        <label for="exampleFormControlTextarea1" class="form-label">Your note</label>
+                        <textarea class="form-control" id="note" rows="3"></textarea>
+                    </div> <!--Alla checkbox-->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="important">
+                        <label class="form-check-label" for="flexCheckDefault">
+                        Important
+                        </label><br>
+                    <button type="button" class="btn btn-light" onclick="addMessage()">Add your message</button>
+                    </div> <!--Elementti johon viestit tulostuu-->
+                    <div class="note"> 
+                        <label for="note">Notes</label><br>
+                        <ul id="notes">
+                            <li id="noteThere"></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div> 
     </div>

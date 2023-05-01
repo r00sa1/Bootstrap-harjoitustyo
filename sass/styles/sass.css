@@ -19,8 +19,7 @@ header, footer {
 
 .header {
   position: fixed;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 80px;
   width: 100%;
   top: 0;
 }
@@ -64,4 +63,10 @@ footer {
 .txt p {
   font-family: "Quicksand", sans-serif;
   font-style: #6E2F2E;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    font-size: 100px;
+  }
 }/*# sourceMappingURL=sass.css.map */

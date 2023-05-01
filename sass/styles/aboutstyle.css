@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+body {
+  background-image: url(/pics/cherry.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-color: #DAB6BA;
+  min-height: 100vh;
+}
+
 header, footer {
   background-color: #DAB6BA;
   color: #6E2F2E;
@@ -10,8 +19,7 @@ header, footer {
 
 .header {
   position: fixed;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 80px;
   width: 100%;
   top: 0;
 }
@@ -35,7 +43,6 @@ header, footer {
   margin: 1%;
   margin-top: 20vh;
   width: 100%;
-  border: solid 2px #6E2F2E;
 }
 
 #about {
@@ -49,11 +56,17 @@ header, footer {
 }
 
 #accordion {
-  right: 0;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+}
+
+.accordion-button {
+  background-color: #F2E6E7;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0;
 }
@@ -65,4 +78,14 @@ footer {
 .txt p {
   font-family: "Quicksand", sans-serif;
   font-style: #6E2F2E;
+}
+
+@media only screen and (max-width: 600px) {
+  #about {
+    display: none;
+  }
+  #accordion {
+    margin-right: 10%;
+    margin-top: 80px;
+  }
 }/*# sourceMappingURL=aboutstyle.css.map */

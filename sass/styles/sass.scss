@@ -22,7 +22,7 @@ header, footer {
 }
 .header {
     position: fixed;
-    height: fit-content;
+    height: 80px;
     width: 100%;
     top: 0;
 }
@@ -60,5 +60,11 @@ footer {
     p {
         font-family: $maintext;
         font-style:$red;    
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        font-size: 100px;
     }
 }
