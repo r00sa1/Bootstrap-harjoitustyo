@@ -8,14 +8,14 @@ $maintext: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
 }
-// body {
-//     background-image: url(/pics/coffee.jpg);
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     background-position-x: center;
-//     background-color: $pink;
-//     min-height: 100vh;
-// }
+ body {
+    background-image: url(/pics/cherry.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: $pink;
+    min-height: 100vh;
+ }
 
 header, footer {
     background-color: $pink;
@@ -23,7 +23,7 @@ header, footer {
 }
 .header {
     position: fixed;
-    height: fit-content;
+    height: 80px;
     width: 100%;
     top: 0;
 }
@@ -40,18 +40,29 @@ header, footer {
 }
 
 .container {
-    position: absolutes;
-    top: 30vh;
-    left: 1%;
-    margin: 0 auto;
-    max-width: 200px;
-    height: 30px;
-    font-family: $header;
+    margin: 1%;
+    margin-top: 20vh;
+    width: 100%;
+}
+
+#about {
+    left: 0;
+    margin-top: 10vh;
+    width: fit-content;
     font-size: 200px;
+    font-family: $header;
     color: $red;
 }
+#accordion {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+.accordion-button{
+    background-color: $rose;
+}
 footer {
-    position:absolute;
+    position:fixed;
     width: 100%;
     bottom: 0;
 }
@@ -61,5 +72,15 @@ footer {
     p {
         font-family: $maintext;
         font-style:$red;    
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #about{
+        display: none;
+    }
+    #accordion{
+        margin-right: 10%;
+        margin-top: 80px;
     }
 }
