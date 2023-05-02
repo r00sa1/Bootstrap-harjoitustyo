@@ -1,0 +1,8 @@
+Nieminen, Roosa
+
+Alla on linkki Githubin projektiin, jonka tiedostoista löytyy kuvakaappaukset UI-suunnitelmista (UI-suunnitelma_Desktop.jpg sekä UI-suunnitelma_Mobile.jpg). UI-suunnitelmat tein Figmalla. 
+
+Tiedostoista löytyy myös kuvakaappaukset valmiin sivuston desktop ja mobile-näkymistä (UI-toteutus_desktop.jpg sekä UI-toteutus_mobile.jpg). 
+
+
+https://github.com/r00sa1/Bootstrap-harjoitustyo.git
