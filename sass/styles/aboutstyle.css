@@ -78,9 +78,10 @@ footer {
 .txt p {
   font-family: "Quicksand", sans-serif;
   font-style: #6E2F2E;
+  padding: 0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   #about {
     display: none;
   }
